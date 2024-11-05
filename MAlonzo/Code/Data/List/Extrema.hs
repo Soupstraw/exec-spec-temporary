@@ -24,11 +24,13 @@ import qualified MAlonzo.Code.Data.List.Base
 import qualified MAlonzo.Code.Data.List.Extrema.Core
 import qualified MAlonzo.Code.Data.List.Membership.Propositional
 import qualified MAlonzo.Code.Data.List.Membership.Propositional.Properties
+import qualified MAlonzo.Code.Data.List.Membership.Setoid.Properties
 import qualified MAlonzo.Code.Data.List.Properties
 import qualified MAlonzo.Code.Data.List.Relation.Unary.All
 import qualified MAlonzo.Code.Data.List.Relation.Unary.Any
 import qualified MAlonzo.Code.Data.Sum.Base
 import qualified MAlonzo.Code.Relation.Binary.Bundles
+import qualified MAlonzo.Code.Relation.Binary.PropositionalEquality.Properties
 import qualified MAlonzo.Code.Relation.Binary.Structures
 
 -- Data.List.Extrema._._<_
@@ -53,7 +55,7 @@ du_argmin_132 ::
   (AgdaAny -> AgdaAny) -> AgdaAny -> [AgdaAny] -> AgdaAny
 du_argmin_132 v0 v1
   = coe
-      MAlonzo.Code.Data.List.Base.du_foldr_242
+      MAlonzo.Code.Data.List.Base.du_foldr_216
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
 -- Data.List.Extrema.argmax
 d_argmax_136 ::
@@ -69,7 +71,7 @@ du_argmax_136 ::
   (AgdaAny -> AgdaAny) -> AgdaAny -> [AgdaAny] -> AgdaAny
 du_argmax_136 v0 v1
   = coe
-      MAlonzo.Code.Data.List.Base.du_foldr_242
+      MAlonzo.Code.Data.List.Base.du_foldr_216
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
 -- Data.List.Extrema.min
 d_min_140 ::
@@ -117,7 +119,7 @@ du_f'91'argmin'93''8804'v'8314'_160 ::
   [AgdaAny] -> MAlonzo.Code.Data.Sum.Base.T__'8846'__30 -> AgdaAny
 du_f'91'argmin'93''8804'v'8314'_160 v0 v1 v2
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_3918
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_4252
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'pres'7506''45''8804'v_362
@@ -148,7 +150,7 @@ du_f'91'argmin'93''60'v'8314'_170 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 du_f'91'argmin'93''60'v'8314'_170 v0 v1 v2
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_3918
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_4252
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'pres'7506''45''60'v_374
@@ -179,7 +181,7 @@ du_v'8804'f'91'argmin'93''8314'_180 ::
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 -> AgdaAny
 du_v'8804'f'91'argmin'93''8314'_180 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_3878
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_4212
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'pres'7495''45'v'8804'_386
@@ -213,7 +215,7 @@ du_v'60'f'91'argmin'93''8314'_190 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 du_v'60'f'91'argmin'93''8314'_190 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_3878
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_4212
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'pres'7495''45'v'60'_402
@@ -271,7 +273,7 @@ du_f'91'argmin'93''8804'f'91'xs'93'_208 ::
   [AgdaAny] -> MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
 du_f'91'argmin'93''8804'f'91'xs'93'_208 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'forces'7495'_3856
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'forces'7495'_4190
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'forces'7495''45'v'8804'_418
@@ -381,7 +383,7 @@ du_argmin'91'xs'93''8804'argmin'91'ys'93''8314'_248 v0 v1 v2 v3 v4
       (coe
          du_f'91'argmin'93''8804'v'8314'_160 v0 v1 (coe v2 v4) v3 v5 v7)
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_166
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_164
          (coe
             (\ v9 ->
                coe du_f'91'argmin'93''8804'v'8314'_160 v0 v1 (coe v2 v9) v3 v5))
@@ -424,7 +426,7 @@ du_argmin'91'xs'93''60'argmin'91'ys'93''8314'_276 v0 v1 v2 v3 v4 v5
       du_v'60'f'91'argmin'93''8314'_190 v0 v2 v4 v6
       (coe du_f'91'argmin'93''60'v'8314'_170 v0 v1 (coe v2 v4) v3 v5 v7)
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_166
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_164
          (coe
             (\ v9 ->
                coe du_f'91'argmin'93''60'v'8314'_170 v0 v1 (coe v2 v9) v3 v5))
@@ -447,7 +449,7 @@ du_argmin'45'sel_292 ::
   AgdaAny -> [AgdaAny] -> MAlonzo.Code.Data.Sum.Base.T__'8846'__30
 du_argmin'45'sel_292 v0 v1
   = coe
-      MAlonzo.Code.Data.List.Membership.Propositional.Properties.du_foldr'45'selective_706
+      MAlonzo.Code.Data.List.Membership.Propositional.Properties.du_foldr'45'selective_682
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'sel_350
@@ -478,13 +480,22 @@ du_argmin'45'all_304 ::
   AgdaAny ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 -> AgdaAny
 du_argmin'45'all_304 v0 v1 v2 v3 v4 v5
-  = let v6 = coe du_argmin'45'sel_292 v0 v1 v2 v3 in
+  = let v6
+          = coe
+              MAlonzo.Code.Data.List.Membership.Setoid.Properties.du_foldr'45'selective_1712
+              (coe
+                 MAlonzo.Code.Relation.Binary.PropositionalEquality.Properties.du_setoid_402)
+              (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480'_344 v0 v1)
+              (coe
+                 MAlonzo.Code.Data.List.Extrema.Core.du_'8851''7480''45'sel_350
+                 (coe v0) (coe v1))
+              (coe v2) (coe v3) in
     coe
       (case coe v6 of
          MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 v7 -> coe v4
          MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v7
            -> coe
-                MAlonzo.Code.Data.List.Relation.Unary.All.du_lookup_440 v3 v5 v7
+                MAlonzo.Code.Data.List.Relation.Unary.All.du_lookup_434 v3 v5 v7
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Data.List.Extrema._.v≤f[argmax]⁺
 d_v'8804'f'91'argmax'93''8314'_366 ::
@@ -508,7 +519,7 @@ du_v'8804'f'91'argmax'93''8314'_366 ::
   [AgdaAny] -> MAlonzo.Code.Data.Sum.Base.T__'8846'__30 -> AgdaAny
 du_v'8804'f'91'argmax'93''8314'_366 v0 v1 v2
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_3918
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_4252
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'pres'7506''45'v'8804'_446
@@ -539,7 +550,7 @@ du_v'60'f'91'argmax'93''8314'_376 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 du_v'60'f'91'argmax'93''8314'_376 v0 v1 v2
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_3918
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7506'_4252
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'pres'7506''45'v'60'_468
@@ -570,7 +581,7 @@ du_f'91'argmax'93''8804'v'8314'_386 ::
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 -> AgdaAny
 du_f'91'argmax'93''8804'v'8314'_386 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_3878
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_4212
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'pres'7495''45''8804'v_490
@@ -604,7 +615,7 @@ du_f'91'argmax'93''60'v'8314'_396 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 du_f'91'argmax'93''60'v'8314'_396 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_3878
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'preserves'7495'_4212
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'pres'7495''45''60'v_506
@@ -662,7 +673,7 @@ du_f'91'xs'93''8804'f'91'argmax'93'_414 ::
   [AgdaAny] -> MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44
 du_f'91'xs'93''8804'f'91'argmax'93'_414 v0 v1 v2 v3
   = coe
-      MAlonzo.Code.Data.List.Properties.du_foldr'45'forces'7495'_3856
+      MAlonzo.Code.Data.List.Properties.du_foldr'45'forces'7495'_4190
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'forces'7495''45''8804'v_522
@@ -682,7 +693,7 @@ du_f'91'xs'93''8804'f'91'argmax'93'_414 v0 v1 v2 v3
                (coe
                   v1
                   (coe
-                     MAlonzo.Code.Data.List.Base.du_foldr_242
+                     MAlonzo.Code.Data.List.Base.du_foldr_216
                      (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
                      (coe v2) (coe v3))))))
 -- Data.List.Extrema._.f[argmax]≈f[v]⁺
@@ -777,7 +788,7 @@ du_argmax'91'xs'93''8804'argmax'91'ys'93''8314'_454 v0 v1 v2 v3 v4
       (coe
          du_v'8804'f'91'argmax'93''8314'_366 v0 v2 (coe v1 v3) v4 v6 v7)
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_166
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_164
          (coe
             (\ v9 ->
                coe du_v'8804'f'91'argmax'93''8314'_366 v0 v2 (coe v1 v9) v4 v6))
@@ -820,7 +831,7 @@ du_argmax'91'xs'93''60'argmax'91'ys'93''8314'_482 v0 v1 v2 v3 v4 v5
       du_f'91'argmax'93''60'v'8314'_396 v0 v1 v3 v5
       (coe du_v'60'f'91'argmax'93''8314'_376 v0 v2 (coe v1 v3) v4 v6 v7)
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_166
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_map_164
          (coe
             (\ v9 ->
                coe du_v'60'f'91'argmax'93''8314'_376 v0 v2 (coe v1 v9) v4 v6))
@@ -843,7 +854,7 @@ du_argmax'45'sel_498 ::
   AgdaAny -> [AgdaAny] -> MAlonzo.Code.Data.Sum.Base.T__'8846'__30
 du_argmax'45'sel_498 v0 v1
   = coe
-      MAlonzo.Code.Data.List.Membership.Propositional.Properties.du_foldr'45'selective_706
+      MAlonzo.Code.Data.List.Membership.Propositional.Properties.du_foldr'45'selective_682
       (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
       (coe
          MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'sel_434
@@ -874,13 +885,22 @@ du_argmax'45'all_510 ::
   AgdaAny ->
   MAlonzo.Code.Data.List.Relation.Unary.All.T_All_44 -> AgdaAny
 du_argmax'45'all_510 v0 v1 v2 v3 v4 v5
-  = let v6 = coe du_argmax'45'sel_498 v0 v1 v2 v3 in
+  = let v6
+          = coe
+              MAlonzo.Code.Data.List.Membership.Setoid.Properties.du_foldr'45'selective_1712
+              (coe
+                 MAlonzo.Code.Relation.Binary.PropositionalEquality.Properties.du_setoid_402)
+              (coe MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480'_346 v0 v1)
+              (coe
+                 MAlonzo.Code.Data.List.Extrema.Core.du_'8852''7480''45'sel_434
+                 (coe v0) (coe v1))
+              (coe v2) (coe v3) in
     coe
       (case coe v6 of
          MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 v7 -> coe v4
          MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v7
            -> coe
-                MAlonzo.Code.Data.List.Relation.Unary.All.du_lookup_440 v3 v5 v7
+                MAlonzo.Code.Data.List.Relation.Unary.All.du_lookup_434 v3 v5 v7
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Data.List.Extrema.min≤v⁺
 d_min'8804'v'8314'_564 ::
@@ -1118,7 +1138,7 @@ du_min'45'mono'45''8838'_660 v0 v1 v2 v3 v4 v5 v6
       du_min'91'xs'93''8804'min'91'ys'93''8314'_634 v0 v1 v2 v3 v4
       (coe MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 (coe v5))
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_tabulate_270 v4
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_tabulate_264 v4
          (\ v7 v8 ->
             coe
               MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42
@@ -1399,7 +1419,7 @@ du_max'45'mono'45''8838'_772 v0 v1 v2 v3 v4 v5 v6
       du_max'91'xs'93''8804'max'91'ys'93''8314'_746 v0 v1 v2 v3 v4
       (coe MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 (coe v5))
       (coe
-         MAlonzo.Code.Data.List.Relation.Unary.All.du_tabulate_270 v3
+         MAlonzo.Code.Data.List.Relation.Unary.All.du_tabulate_264 v3
          (\ v7 v8 ->
             coe
               MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42

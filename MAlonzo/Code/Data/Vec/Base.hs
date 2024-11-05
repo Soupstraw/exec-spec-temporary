@@ -636,25 +636,8 @@ d_sum_420 :: Integer -> T_Vec_28 -> Integer
 d_sum_420 v0
   = coe
       du_foldr_352 (coe v0) (coe (\ v1 -> addInt)) (coe (0 :: Integer))
--- Data.Vec.Base.countᵇ
-d_count'7495'_422 ::
-  MAlonzo.Code.Agda.Primitive.T_Level_18 ->
-  () -> Integer -> (AgdaAny -> Bool) -> T_Vec_28 -> Integer
-d_count'7495'_422 ~v0 ~v1 ~v2 v3 v4 = du_count'7495'_422 v3 v4
-du_count'7495'_422 :: (AgdaAny -> Bool) -> T_Vec_28 -> Integer
-du_count'7495'_422 v0 v1
-  = case coe v1 of
-      C_'91''93'_32 -> coe (0 :: Integer)
-      C__'8759'__38 v3 v4
-        -> coe
-             MAlonzo.Code.Data.Bool.Base.du_if_then_else__42 (coe v0 v3)
-             (coe
-                addInt (coe (1 :: Integer))
-                (coe du_count'7495'_422 (coe v0) (coe v4)))
-             (coe du_count'7495'_422 (coe v0) (coe v4))
-      _ -> MAlonzo.RTE.mazUnreachableError
 -- Data.Vec.Base.count
-d_count_434 ::
+d_count_424 ::
   MAlonzo.Code.Agda.Primitive.T_Level_18 ->
   () ->
   MAlonzo.Code.Agda.Primitive.T_Level_18 ->
@@ -663,17 +646,34 @@ d_count_434 ::
   (AgdaAny ->
    MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20) ->
   T_Vec_28 -> Integer
-d_count_434 ~v0 ~v1 ~v2 ~v3 ~v4 v5 = du_count_434 v5
-du_count_434 ::
+d_count_424 ~v0 ~v1 ~v2 ~v3 ~v4 v5 v6 = du_count_424 v5 v6
+du_count_424 ::
   (AgdaAny ->
    MAlonzo.Code.Relation.Nullary.Decidable.Core.T_Dec_20) ->
   T_Vec_28 -> Integer
-du_count_434 v0
+du_count_424 v0 v1
+  = case coe v1 of
+      C_'91''93'_32 -> coe (0 :: Integer)
+      C__'8759'__38 v3 v4
+        -> coe
+             MAlonzo.Code.Data.Bool.Base.du_if_then_else__44
+             (MAlonzo.Code.Relation.Nullary.Decidable.Core.d_does_28
+                (coe v0 v3))
+             (\ v5 -> addInt (coe (1 :: Integer)) (coe v5)) (\ v5 -> v5)
+             (coe du_count_424 (coe v0) (coe v4))
+      _ -> MAlonzo.RTE.mazUnreachableError
+-- Data.Vec.Base.countᵇ
+d_count'7495'_434 ::
+  MAlonzo.Code.Agda.Primitive.T_Level_18 ->
+  () -> Integer -> (AgdaAny -> Bool) -> T_Vec_28 -> Integer
+d_count'7495'_434 ~v0 ~v1 ~v2 v3 = du_count'7495'_434 v3
+du_count'7495'_434 :: (AgdaAny -> Bool) -> T_Vec_28 -> Integer
+du_count'7495'_434 v0
   = coe
-      du_count'7495'_422
+      du_count_424
       (coe
          (\ v1 ->
-            MAlonzo.Code.Relation.Nullary.Decidable.Core.d_does_28
+            MAlonzo.Code.Relation.Nullary.Decidable.Core.d_T'63'_66
               (coe v0 v1)))
 -- Data.Vec.Base.[_]
 d_'91'_'93'_438 ::
@@ -847,18 +847,18 @@ d_truncate_566 ::
   () ->
   Integer ->
   Integer ->
-  MAlonzo.Code.Data.Nat.Base.T__'8804'__18 -> T_Vec_28 -> T_Vec_28
+  MAlonzo.Code.Data.Nat.Base.T__'8804'__22 -> T_Vec_28 -> T_Vec_28
 d_truncate_566 ~v0 ~v1 v2 ~v3 v4 v5 = du_truncate_566 v2 v4 v5
 du_truncate_566 ::
   Integer ->
-  MAlonzo.Code.Data.Nat.Base.T__'8804'__18 -> T_Vec_28 -> T_Vec_28
+  MAlonzo.Code.Data.Nat.Base.T__'8804'__22 -> T_Vec_28 -> T_Vec_28
 du_truncate_566 v0 v1 v2
   = case coe v0 of
       0 -> coe C_'91''93'_32
       _ -> let v3 = subInt (coe v0) (coe (1 :: Integer)) in
            coe
              (case coe v1 of
-                MAlonzo.Code.Data.Nat.Base.C_s'8804's_30 v6
+                MAlonzo.Code.Data.Nat.Base.C_s'8804's_34 v6
                   -> case coe v2 of
                        C__'8759'__38 v8 v9
                          -> coe
@@ -871,19 +871,19 @@ d_padRight_578 ::
   () ->
   Integer ->
   Integer ->
-  MAlonzo.Code.Data.Nat.Base.T__'8804'__18 ->
+  MAlonzo.Code.Data.Nat.Base.T__'8804'__22 ->
   AgdaAny -> T_Vec_28 -> T_Vec_28
 d_padRight_578 ~v0 ~v1 ~v2 v3 v4 v5 v6
   = du_padRight_578 v3 v4 v5 v6
 du_padRight_578 ::
   Integer ->
-  MAlonzo.Code.Data.Nat.Base.T__'8804'__18 ->
+  MAlonzo.Code.Data.Nat.Base.T__'8804'__22 ->
   AgdaAny -> T_Vec_28 -> T_Vec_28
 du_padRight_578 v0 v1 v2 v3
   = case coe v1 of
-      MAlonzo.Code.Data.Nat.Base.C_z'8804'n_22
+      MAlonzo.Code.Data.Nat.Base.C_z'8804'n_26
         -> coe du_replicate_444 (coe v0) (coe v2)
-      MAlonzo.Code.Data.Nat.Base.C_s'8804's_30 v6
+      MAlonzo.Code.Data.Nat.Base.C_s'8804's_34 v6
         -> let v7 = subInt (coe v0) (coe (1 :: Integer)) in
            coe
              (case coe v3 of
