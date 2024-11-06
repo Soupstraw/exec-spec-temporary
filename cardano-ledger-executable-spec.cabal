@@ -199,6 +199,7 @@ library
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Ratify
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Core
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.NewEpoch
+        MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.Core
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Address
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Chain
