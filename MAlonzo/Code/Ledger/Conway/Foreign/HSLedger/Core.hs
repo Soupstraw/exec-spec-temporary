@@ -130,7 +130,7 @@ d_Quorum_38 :: Integer
 d_Quorum_38 = coe (1 :: Integer)
 -- Ledger.Conway.Foreign.HSLedger.Core.Implementation.NetworkId
 d_NetworkId_40 :: Integer
-d_NetworkId_40 = coe (0 :: Integer)
+d_NetworkId_40 = coe (1 :: Integer)
 -- Ledger.Conway.Foreign.HSLedger.Core.Implementation.SKey
 d_SKey_42 :: ()
 d_SKey_42 = erased
