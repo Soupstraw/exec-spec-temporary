@@ -5359,7 +5359,7 @@ pattern C_Block_395 a0 a1 = Block a0 a1
 check_Block_395 ::
   MAlonzo.Code.Agda.Builtin.List.T_List_10
     ()
-    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.T_Tx_109163 ->
+    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.T_Tx_108875 ->
   Integer -> T_Block_393
 check_Block_395 = Block
 cover_Block_393 :: Block -> ()
