@@ -174,13 +174,18 @@ library
         MAlonzo.Code.Algebra.Morphism.Definitions
         MAlonzo.Code.Algebra.Morphism.Construct.Identity
         MAlonzo.Code.Algebra.Morphism.GroupMonomorphism
+        MAlonzo.Code.Ledger.Utxo
         MAlonzo.Code.Ledger.Enact
         MAlonzo.Code.Ledger.Prelude
+        MAlonzo.Code.Ledger.Gov
+        MAlonzo.Code.Ledger.Ratify
         MAlonzo.Code.Ledger.Set
         MAlonzo.Code.Ledger.GovernanceActions
+        MAlonzo.Code.Ledger.Utxow
         MAlonzo.Code.Ledger.GovernanceActions.Properties
         MAlonzo.Code.Ledger.Types.Epoch
         MAlonzo.Code.Ledger.Types.GovStructure
+        MAlonzo.Code.Ledger.Ratify.Properties
         MAlonzo.Code.Ledger.Address
         MAlonzo.Code.Ledger.Transaction
         MAlonzo.Code.Ledger.Abstract
@@ -188,6 +193,7 @@ library
         MAlonzo.Code.Ledger.PParams
         MAlonzo.Code.Ledger.Crypto
         MAlonzo.Code.Ledger.Interface.HasCoin
+        MAlonzo.Code.Ledger.Ledger
         MAlonzo.Code.Ledger.Script
         MAlonzo.Code.Ledger.TokenAlgebra
         MAlonzo.Code.Ledger.Certs
@@ -215,13 +221,11 @@ library
         MAlonzo.Code.Ledger.Conway.Conformance.Utxo
         MAlonzo.Code.Ledger.Conway.Conformance.Epoch.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Gov
-        MAlonzo.Code.Ledger.Conway.Conformance.Ratify
         MAlonzo.Code.Ledger.Conway.Conformance.Ledger.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Utxow
         MAlonzo.Code.Ledger.Conway.Conformance.Utxo.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Certs.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Gov.Properties
-        MAlonzo.Code.Ledger.Conway.Conformance.Ratify.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Utxow.Properties
         MAlonzo.Code.Ledger.Conway.Conformance.Chain
         MAlonzo.Code.Ledger.Conway.Conformance.Epoch
@@ -229,7 +233,7 @@ library
         MAlonzo.Code.Ledger.Conway.Conformance.Ledger
         MAlonzo.Code.Ledger.Conway.Conformance.Script
         MAlonzo.Code.Ledger.Conway.Conformance.Certs
-        MAlonzo.Code.Ledger.Conway.Conformance.ScriptValidation
+        MAlonzo.Code.Ledger.ScriptValidation
         MAlonzo.Code.Ledger.Fees
         MAlonzo.Code.Foreign.Haskell.Either
         MAlonzo.Code.Foreign.Haskell.Pair
