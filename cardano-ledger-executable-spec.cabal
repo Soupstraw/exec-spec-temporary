@@ -203,6 +203,7 @@ library
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Cert
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Ratify
+        MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.ExternalStructures
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Core
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.NewEpoch
         MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.Core
