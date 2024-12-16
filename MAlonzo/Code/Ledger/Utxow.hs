@@ -817,8 +817,9 @@ du_credsNeeded_2198 v0 v1 v2
                      MAlonzo.Code.Axiom.Set.d_th_1470
                      (coe
                         MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
-                  (coe MAlonzo.Code.Ledger.Transaction.d_collateral_2598 (coe v2))
-                  (coe MAlonzo.Code.Ledger.Transaction.d_txins_2564 (coe v2))))))
+                  (coe MAlonzo.Code.Ledger.Transaction.d_txins_2564 (coe v2))
+                  (coe
+                     MAlonzo.Code.Ledger.Transaction.d_collateral_2598 (coe v2))))))
       (coe
          MAlonzo.Code.Axiom.Set.du__'8746'__680
          (coe
