@@ -490,7 +490,7 @@ d_Dec'45'validPlutusScript_188 ::
   MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6 ->
   [Integer] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
 d_Dec'45'validPlutusScript_188
   = let v0
@@ -2203,7 +2203,7 @@ d_khs_680
             (coe MAlonzo.Code.Ledger.Transaction.d_crypto_1224 (coe v1))))
 -- Ledger.Conway.Foreign.HSLedger.BaseTypes._.language
 d_language_682 ::
-  MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6 ->
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6
 d_language_682
   = let v0
@@ -2573,7 +2573,7 @@ d_tokenAlgebra_758 ::
   MAlonzo.Code.Ledger.TokenAlgebra.T_TokenAlgebra_8
 d_tokenAlgebra_758
   = coe
-      MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Core.d_tokenAlgebra_260
+      MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Core.d_tokenAlgebra_264
 -- Ledger.Conway.Foreign.HSLedger.BaseTypes._.txOutHash
 d_txOutHash_760 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
@@ -2661,7 +2661,7 @@ d_validPlutusScript_774 ::
   MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6 ->
   [Integer] ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  MAlonzo.Code.Agda.Builtin.Unit.T_'8868'_6 -> ()
+  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 -> ()
 d_validPlutusScript_774 = erased
 -- Ledger.Conway.Foreign.HSLedger.BaseTypes._.ε
 d_ε_776 :: Integer
