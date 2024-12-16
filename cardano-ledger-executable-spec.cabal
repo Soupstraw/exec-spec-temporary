@@ -183,6 +183,7 @@ library
         MAlonzo.Code.Ledger.GovernanceActions
         MAlonzo.Code.Ledger.Utxow
         MAlonzo.Code.Ledger.GovernanceActions.Properties
+        MAlonzo.Code.Ledger.Gov.Properties
         MAlonzo.Code.Ledger.Types.Epoch
         MAlonzo.Code.Ledger.Types.GovStructure
         MAlonzo.Code.Ledger.Ratify.Properties
