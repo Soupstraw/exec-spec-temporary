@@ -54,9 +54,9 @@ data Tag = Spend  | Mint  | Cert  | Rewrd  | Vote  | Propose
   deriving (Show, Eq, Generic)
 data Timelock = RequireAllOf [MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Timelock] | RequireAnyOf [MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Timelock] | RequireMOf Integer [MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Timelock] | RequireSig Integer | RequireTimeStart Integer | RequireTimeExpire Integer
   deriving (Show, Eq, Generic)
-data HSTimelock = HSTimelock {timelock :: MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Timelock, storedHash :: Integer}
+data HSTimelock = HSTimelock {timelock :: MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Timelock, tlScriptHash :: Integer, tlScriptSize :: Integer}
   deriving (Show, Eq, Generic)
-data HSPlutusScript = MkHSPlutusScript {scriptHash :: Integer, serSize :: Integer}
+data HSPlutusScript = MkHSPlutusScript {psScriptHash :: Integer, psScriptSize :: Integer}
   deriving (Show, Eq, Generic)
 data TxWitnesses = MkTxWitnesses {vkSigs :: (MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.HSMap MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Address.HSVKey Integer), scripts :: (MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.HSSet (Either MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.HSTimelock MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.HSPlutusScript)), txdats :: (MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.HSMap Integer Integer), txrdmrs :: (MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.HSMap (MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Transaction.Tag, Integer) (Integer, (Integer, Integer)))}
   deriving (Show, Eq, Generic)
@@ -159,24 +159,24 @@ d_Conv'45'HSTimelock_20
       (coe
          (\ v0 ->
             case coe v0 of
-              MAlonzo.Code.Ledger.Conway.Conformance.Script.C_HSTimelock'46'constructor_713 v1 v2
+              MAlonzo.Code.Ledger.Conway.Conformance.Script.C_HSTimelock'46'constructor_721 v1 v2 v3
                 -> coe
                      C_HSTimelock_2019
                      (coe
                         MAlonzo.Code.Foreign.Convertible.d_to_18 d_'46'extendedlambda_709
                         v1)
-                     (coe v2)
+                     (coe v2) (coe v3)
               _ -> MAlonzo.RTE.mazUnreachableError))
       (coe
          (\ v0 ->
             case coe v0 of
-              C_HSTimelock_2019 v1 v2
+              C_HSTimelock_2019 v1 v2 v3
                 -> coe
-                     MAlonzo.Code.Ledger.Conway.Conformance.Script.C_HSTimelock'46'constructor_713
+                     MAlonzo.Code.Ledger.Conway.Conformance.Script.C_HSTimelock'46'constructor_721
                      (coe
                         MAlonzo.Code.Foreign.Convertible.d_from_20 d_'46'extendedlambda_709
                         v1)
-                     (coe v2)
+                     (coe v2) (coe v3)
               _ -> MAlonzo.RTE.mazUnreachableError))
 -- Ledger.Conway.Foreign.HSLedger.Transaction.HsTy-HSPlutusScript
 d_HsTy'45'HSPlutusScript_22 ::
@@ -191,15 +191,15 @@ d_Conv'45'HSPlutusScript_24
       (coe
          (\ v0 ->
             case coe v0 of
-              MAlonzo.Code.Ledger.Conway.Conformance.Script.C_MkHSPlutusScript_362 v1 v2
-                -> coe C_MkHSPlutusScript_2629 (coe v1) (coe v2)
+              MAlonzo.Code.Ledger.Conway.Conformance.Script.C_MkHSPlutusScript_366 v1 v2
+                -> coe C_MkHSPlutusScript_3031 (coe v1) (coe v2)
               _ -> MAlonzo.RTE.mazUnreachableError))
       (coe
          (\ v0 ->
             case coe v0 of
-              C_MkHSPlutusScript_2629 v1 v2
+              C_MkHSPlutusScript_3031 v1 v2
                 -> coe
-                     MAlonzo.Code.Ledger.Conway.Conformance.Script.C_MkHSPlutusScript_362
+                     MAlonzo.Code.Ledger.Conway.Conformance.Script.C_MkHSPlutusScript_366
                      (coe v1) (coe v2)
               _ -> MAlonzo.RTE.mazUnreachableError))
 -- Ledger.Conway.Foreign.HSLedger.Transaction.HsTy-TxWitnessess
@@ -217,7 +217,7 @@ d_Conv'45'TxWitnessess_28
             case coe v0 of
               MAlonzo.Code.Ledger.Transaction.C_TxWitnesses'46'constructor_18157 v1 v2 v3 v4
                 -> coe
-                     C_MkTxWitnesses_3203
+                     C_MkTxWitnesses_3605
                      (coe
                         MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSMap_28
                         (coe
@@ -282,7 +282,7 @@ d_Conv'45'TxWitnessess_28
       (coe
          (\ v0 ->
             case coe v0 of
-              C_MkTxWitnesses_3203 v1 v2 v3 v4
+              C_MkTxWitnesses_3605 v1 v2 v3 v4
                 -> coe
                      MAlonzo.Code.Ledger.Transaction.C_TxWitnesses'46'constructor_18157
                      (coe
@@ -363,7 +363,7 @@ d_Conv'45'TxBody_32
             case coe v0 of
               MAlonzo.Code.Ledger.Transaction.C_TxBody'46'constructor_17605 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20
                 -> coe
-                     C_MkTxBody_11077
+                     C_MkTxBody_11479
                      (coe
                         MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSSet_40
                         (coe
@@ -563,7 +563,7 @@ d_Conv'45'TxBody_32
       (coe
          (\ v0 ->
             case coe v0 of
-              C_MkTxBody_11077 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20
+              C_MkTxBody_11479 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20
                 -> coe
                      MAlonzo.Code.Ledger.Transaction.C_TxBody'46'constructor_17605
                      (coe
@@ -672,7 +672,7 @@ d_Conv'45'TxBody_32
                                   = MAlonzo.Code.Ledger.Conway.Foreign.ExternalFunctions.d_dummyExternalFunctions_14 in
                             coe
                               (let v22
-                                     = MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.ExternalStructures.d_HSTransactionStructure_656
+                                     = MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.ExternalStructures.d_HSTransactionStructure_658
                                          (coe v21) in
                                coe
                                  (coe
@@ -811,9 +811,9 @@ d_Conv'45'Tx_36
             case coe v0 of
               MAlonzo.Code.Ledger.Transaction.C_Tx'46'constructor_18349 v1 v2 v3 v4
                 -> coe
-                     C_MkTx_109079
+                     C_MkTx_109481
                      (coe
-                        C_MkTxBody_11077
+                        C_MkTxBody_11479
                         (coe
                            MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSSet_40
                            (coe
@@ -1014,7 +1014,7 @@ d_Conv'45'Tx_36
                                  MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.BaseTypes.d_iConvNat_12))
                            (MAlonzo.Code.Ledger.Transaction.d_scriptIntHash_2602 (coe v1))))
                      (coe
-                        C_MkTxWitnesses_3203
+                        C_MkTxWitnesses_3605
                         (coe
                            MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSMap_28
                            (coe
@@ -1092,7 +1092,7 @@ d_Conv'45'Tx_36
       (coe
          (\ v0 ->
             case coe v0 of
-              C_MkTx_109079 v1 v2 v3 v4
+              C_MkTx_109481 v1 v2 v3 v4
                 -> coe
                      MAlonzo.Code.Ledger.Transaction.C_Tx'46'constructor_18349
                      (coe
@@ -1104,7 +1104,7 @@ d_Conv'45'Tx_36
                                  case coe v5 of
                                    MAlonzo.Code.Ledger.Transaction.C_TxBody'46'constructor_17605 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20 v21 v22 v23 v24 v25
                                      -> coe
-                                          C_MkTxBody_11077
+                                          C_MkTxBody_11479
                                           (coe
                                              MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSSet_40
                                              (coe
@@ -1315,7 +1315,7 @@ d_Conv'45'Tx_36
                            (coe
                               (\ v5 ->
                                  case coe v5 of
-                                   C_MkTxBody_11077 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20 v21 v22 v23 v24 v25
+                                   C_MkTxBody_11479 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20 v21 v22 v23 v24 v25
                                      -> coe
                                           MAlonzo.Code.Ledger.Transaction.C_TxBody'46'constructor_17605
                                           (coe
@@ -1431,7 +1431,7 @@ d_Conv'45'Tx_36
                                                        = MAlonzo.Code.Ledger.Conway.Foreign.ExternalFunctions.d_dummyExternalFunctions_14 in
                                                  coe
                                                    (let v27
-                                                          = MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.ExternalStructures.d_HSTransactionStructure_656
+                                                          = MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.ExternalStructures.d_HSTransactionStructure_658
                                                               (coe v26) in
                                                     coe
                                                       (coe
@@ -1575,7 +1575,7 @@ d_Conv'45'Tx_36
                                  case coe v5 of
                                    MAlonzo.Code.Ledger.Transaction.C_TxWitnesses'46'constructor_18157 v6 v7 v8 v9
                                      -> coe
-                                          C_MkTxWitnesses_3203
+                                          C_MkTxWitnesses_3605
                                           (coe
                                              MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.C_MkHSMap_28
                                              (coe
@@ -1644,7 +1644,7 @@ d_Conv'45'Tx_36
                            (coe
                               (\ v5 ->
                                  case coe v5 of
-                                   C_MkTxWitnesses_3203 v6 v7 v8 v9
+                                   C_MkTxWitnesses_3605 v6 v7 v8 v9
                                      -> coe
                                           MAlonzo.Code.Ledger.Transaction.C_TxWitnesses'46'constructor_18157
                                           (coe
@@ -1851,36 +1851,36 @@ d_'46'extendedlambda_709
 -- Ledger.Conway.Foreign.HSLedger.Transaction.HSTimelock
 d_HSTimelock_2017 = ()
 type T_HSTimelock_2017 = HSTimelock
-pattern C_HSTimelock_2019 a0 a1 = HSTimelock a0 a1
+pattern C_HSTimelock_2019 a0 a1 a2 = HSTimelock a0 a1 a2
 check_HSTimelock_2019 ::
-  T_Timelock_143 -> Integer -> T_HSTimelock_2017
+  T_Timelock_143 -> Integer -> Integer -> T_HSTimelock_2017
 check_HSTimelock_2019 = HSTimelock
 cover_HSTimelock_2017 :: HSTimelock -> ()
 cover_HSTimelock_2017 x
   = case x of
-      HSTimelock _ _ -> ()
+      HSTimelock _ _ _ -> ()
 -- Ledger.Conway.Foreign.HSLedger.Transaction.HSPlutusScript
-d_HSPlutusScript_2627 = ()
-type T_HSPlutusScript_2627 = HSPlutusScript
-pattern C_MkHSPlutusScript_2629 a0 a1 = MkHSPlutusScript a0 a1
-check_MkHSPlutusScript_2629 ::
-  Integer -> Integer -> T_HSPlutusScript_2627
-check_MkHSPlutusScript_2629 = MkHSPlutusScript
-cover_HSPlutusScript_2627 :: HSPlutusScript -> ()
-cover_HSPlutusScript_2627 x
+d_HSPlutusScript_3029 = ()
+type T_HSPlutusScript_3029 = HSPlutusScript
+pattern C_MkHSPlutusScript_3031 a0 a1 = MkHSPlutusScript a0 a1
+check_MkHSPlutusScript_3031 ::
+  Integer -> Integer -> T_HSPlutusScript_3029
+check_MkHSPlutusScript_3031 = MkHSPlutusScript
+cover_HSPlutusScript_3029 :: HSPlutusScript -> ()
+cover_HSPlutusScript_3029 x
   = case x of
       MkHSPlutusScript _ _ -> ()
 -- Ledger.Conway.Foreign.HSLedger.Transaction.TxWitnesses
-d_TxWitnesses_3201 = ()
-type T_TxWitnesses_3201 = TxWitnesses
-pattern C_MkTxWitnesses_3203 a0 a1 a2 a3 = MkTxWitnesses a0 a1 a2 a3
-check_MkTxWitnesses_3203 ::
+d_TxWitnesses_3603 = ()
+type T_TxWitnesses_3603 = TxWitnesses
+pattern C_MkTxWitnesses_3605 a0 a1 a2 a3 = MkTxWitnesses a0 a1 a2 a3
+check_MkTxWitnesses_3605 ::
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSMap_18
     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Address.T_HSVKey_15
     Integer ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSSet_32
     (MAlonzo.Code.Foreign.Haskell.Either.T_Either_22
-       () () T_HSTimelock_2017 T_HSPlutusScript_2627) ->
+       () () T_HSTimelock_2017 T_HSPlutusScript_3029) ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSMap_18
     Integer Integer ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSMap_18
@@ -1890,17 +1890,17 @@ check_MkTxWitnesses_3203 ::
        () () Integer
        (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
           () () Integer Integer)) ->
-  T_TxWitnesses_3201
-check_MkTxWitnesses_3203 = MkTxWitnesses
-cover_TxWitnesses_3201 :: TxWitnesses -> ()
-cover_TxWitnesses_3201 x
+  T_TxWitnesses_3603
+check_MkTxWitnesses_3605 = MkTxWitnesses
+cover_TxWitnesses_3603 :: TxWitnesses -> ()
+cover_TxWitnesses_3603 x
   = case x of
       MkTxWitnesses _ _ _ _ -> ()
 -- Ledger.Conway.Foreign.HSLedger.Transaction.TxBody
-d_TxBody_11075 = ()
-type T_TxBody_11075 = TxBody
-pattern C_MkTxBody_11077 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 = MkTxBody a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19
-check_MkTxBody_11077 ::
+d_TxBody_11477 = ()
+type T_TxBody_11477 = TxBody
+pattern C_MkTxBody_11479 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 = MkTxBody a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19
+check_MkTxBody_11479 ::
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSSet_32
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        () () Integer Integer) ->
@@ -1926,7 +1926,7 @@ check_MkTxBody_11077 ::
              (MAlonzo.Code.Agda.Builtin.Maybe.T_Maybe_10
                 ()
                 (MAlonzo.Code.Foreign.Haskell.Either.T_Either_22
-                   () () T_HSTimelock_2017 T_HSPlutusScript_2627))))) ->
+                   () () T_HSTimelock_2017 T_HSPlutusScript_3029))))) ->
   Integer ->
   Integer ->
   MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
@@ -1963,24 +1963,24 @@ check_MkTxBody_11077 ::
        () () Integer Integer) ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_HSSet_32 Integer ->
   MAlonzo.Code.Agda.Builtin.Maybe.T_Maybe_10 () Integer ->
-  T_TxBody_11075
-check_MkTxBody_11077 = MkTxBody
-cover_TxBody_11075 :: TxBody -> ()
-cover_TxBody_11075 x
+  T_TxBody_11477
+check_MkTxBody_11479 = MkTxBody
+cover_TxBody_11477 :: TxBody -> ()
+cover_TxBody_11477 x
   = case x of
       MkTxBody _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ -> ()
 -- Ledger.Conway.Foreign.HSLedger.Transaction.Tx
-d_Tx_109077 = ()
-type T_Tx_109077 = Tx
-pattern C_MkTx_109079 a0 a1 a2 a3 = MkTx a0 a1 a2 a3
-check_MkTx_109079 ::
-  T_TxBody_11075 ->
-  T_TxWitnesses_3201 ->
+d_Tx_109479 = ()
+type T_Tx_109479 = Tx
+pattern C_MkTx_109481 a0 a1 a2 a3 = MkTx a0 a1 a2 a3
+check_MkTx_109481 ::
+  T_TxBody_11477 ->
+  T_TxWitnesses_3603 ->
   Bool ->
   MAlonzo.Code.Agda.Builtin.Maybe.T_Maybe_10 () Integer ->
-  T_Tx_109077
-check_MkTx_109079 = MkTx
-cover_Tx_109077 :: Tx -> ()
-cover_Tx_109077 x
+  T_Tx_109479
+check_MkTx_109481 = MkTx
+cover_Tx_109479 :: Tx -> ()
+cover_Tx_109479 x
   = case x of
       MkTx _ _ _ _ -> ()
