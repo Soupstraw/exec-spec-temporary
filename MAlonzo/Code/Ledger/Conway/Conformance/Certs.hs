@@ -796,13 +796,13 @@ du_keyDeposit_1262 v0
 -- Ledger.Conway.Conformance.Certs._.keyDeposit
 d_keyDeposit_1334 ::
   MAlonzo.Code.Ledger.Types.GovStructure.T_GovStructure_6 ->
-  T_GeneralizeTel_26679 -> Integer
+  T_GeneralizeTel_26735 -> Integer
 d_keyDeposit_1334 ~v0 v1 = du_keyDeposit_1334 v1
-du_keyDeposit_1334 :: T_GeneralizeTel_26679 -> Integer
+du_keyDeposit_1334 :: T_GeneralizeTel_26735 -> Integer
 du_keyDeposit_1334 v0
   = coe
       MAlonzo.Code.Ledger.PParams.d_keyDeposit_332
-      (coe d_'46'generalizedField'45'pp_26661 (coe v0))
+      (coe d_'46'generalizedField'45'pp_26717 (coe v0))
 -- Ledger.Conway.Conformance.Certs._⊢_⇀⦇_,GOVCERT⦈_
 d__'8866'_'8640''10631'_'44'GOVCERT'10632'__1374 a0 a1 a2 a3 a4
   = ()
@@ -824,13 +824,13 @@ newtype T__'8866'_'8640''10631'_'44'CERTBASE'10632'__1460
 -- Ledger.Conway.Conformance.Certs._.drepActivity
 d_drepActivity_1482 ::
   MAlonzo.Code.Ledger.Types.GovStructure.T_GovStructure_6 ->
-  T_GeneralizeTel_40097 -> AgdaAny
+  T_GeneralizeTel_40153 -> AgdaAny
 d_drepActivity_1482 ~v0 v1 = du_drepActivity_1482 v1
-du_drepActivity_1482 :: T_GeneralizeTel_40097 -> AgdaAny
+du_drepActivity_1482 :: T_GeneralizeTel_40153 -> AgdaAny
 du_drepActivity_1482 v0
   = coe
       MAlonzo.Code.Ledger.PParams.d_drepActivity_376
-      (coe d_'46'generalizedField'45'pp_40073 (coe v0))
+      (coe d_'46'generalizedField'45'pp_40129 (coe v0))
 -- Ledger.Conway.Conformance.Certs._⊢_⇀⦇_,CERTS⦈_
 d__'8866'_'8640''10631'_'44'CERTS'10632'__1540 ::
   MAlonzo.Code.Ledger.Types.GovStructure.T_GovStructure_6 ->
@@ -942,74 +942,74 @@ data T_GeneralizeTel_18559
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 -- Ledger.Conway.Conformance.Certs..generalizedField-pp
-d_'46'generalizedField'45'pp_26661 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Ledger.PParams.T_PParams_244
-d_'46'generalizedField'45'pp_26661 v0
+d_'46'generalizedField'45'pp_26717 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Ledger.PParams.T_PParams_244
+d_'46'generalizedField'45'pp_26717 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v1
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-c
-d_'46'generalizedField'45'c_26663 ::
-  T_GeneralizeTel_26679 ->
+d_'46'generalizedField'45'c_26719 ::
+  T_GeneralizeTel_26735 ->
   MAlonzo.Code.Ledger.Address.T_Credential_16
-d_'46'generalizedField'45'c_26663 v0
+d_'46'generalizedField'45'c_26719 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v2
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-rwds
-d_'46'generalizedField'45'rwds_26665 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'rwds_26665 v0
+d_'46'generalizedField'45'rwds_26721 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'rwds_26721 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v3
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-d
-d_'46'generalizedField'45'd_26667 ::
-  T_GeneralizeTel_26679 -> Integer
-d_'46'generalizedField'45'd_26667 v0
+d_'46'generalizedField'45'd_26723 ::
+  T_GeneralizeTel_26735 -> Integer
+d_'46'generalizedField'45'd_26723 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v4
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v4
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-pools
-d_'46'generalizedField'45'pools_26669 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'pools_26669 v0
+d_'46'generalizedField'45'pools_26725 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'pools_26725 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v5
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v5
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-delegatees
-d_'46'generalizedField'45'delegatees_26671 ::
-  T_GeneralizeTel_26679 ->
+d_'46'generalizedField'45'delegatees_26727 ::
+  T_GeneralizeTel_26735 ->
   [MAlonzo.Code.Ledger.Address.T_Credential_16]
-d_'46'generalizedField'45'delegatees_26671 v0
+d_'46'generalizedField'45'delegatees_26727 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v6
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v6
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-vDelegs
-d_'46'generalizedField'45'vDelegs_26673 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'vDelegs_26673 v0
+d_'46'generalizedField'45'vDelegs_26729 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'vDelegs_26729 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v7
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v7
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-sDelegs
-d_'46'generalizedField'45'sDelegs_26675 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'sDelegs_26675 v0
+d_'46'generalizedField'45'sDelegs_26731 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'sDelegs_26731 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v8
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v8
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-dep
-d_'46'generalizedField'45'dep_26677 ::
-  T_GeneralizeTel_26679 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'dep_26677 v0
+d_'46'generalizedField'45'dep_26733 ::
+  T_GeneralizeTel_26735 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'dep_26733 v0
   = case coe v0 of
-      C_mkGeneralizeTel_26681 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v9
+      C_mkGeneralizeTel_26737 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v9
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs.GeneralizeTel
-d_GeneralizeTel_26679 a0 = ()
-data T_GeneralizeTel_26679
-  = C_mkGeneralizeTel_26681 MAlonzo.Code.Ledger.PParams.T_PParams_244
+d_GeneralizeTel_26735 a0 = ()
+data T_GeneralizeTel_26735
+  = C_mkGeneralizeTel_26737 MAlonzo.Code.Ledger.PParams.T_PParams_244
                             MAlonzo.Code.Ledger.Address.T_Credential_16
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 Integer
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
@@ -1018,75 +1018,75 @@ data T_GeneralizeTel_26679
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
 -- Ledger.Conway.Conformance.Certs..generalizedField-d
-d_'46'generalizedField'45'd_30681 ::
-  T_GeneralizeTel_30699 -> Integer
-d_'46'generalizedField'45'd_30681 v0
+d_'46'generalizedField'45'd_30737 ::
+  T_GeneralizeTel_30755 -> Integer
+d_'46'generalizedField'45'd_30737 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v1
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-c
-d_'46'generalizedField'45'c_30683 ::
-  T_GeneralizeTel_30699 ->
+d_'46'generalizedField'45'c_30739 ::
+  T_GeneralizeTel_30755 ->
   MAlonzo.Code.Ledger.Address.T_Credential_16
-d_'46'generalizedField'45'c_30683 v0
+d_'46'generalizedField'45'c_30739 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v2
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-dReps
-d_'46'generalizedField'45'dReps_30685 ::
-  T_GeneralizeTel_30699 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'dReps_30685 v0
+d_'46'generalizedField'45'dReps_30741 ::
+  T_GeneralizeTel_30755 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'dReps_30741 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v3
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-e
-d_'46'generalizedField'45'e_30687 ::
-  T_GeneralizeTel_30699 -> AgdaAny
-d_'46'generalizedField'45'e_30687 v0
+d_'46'generalizedField'45'e_30743 ::
+  T_GeneralizeTel_30755 -> AgdaAny
+d_'46'generalizedField'45'e_30743 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v4
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v4
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-vs
-d_'46'generalizedField'45'vs_30689 ::
-  T_GeneralizeTel_30699 ->
+d_'46'generalizedField'45'vs_30745 ::
+  T_GeneralizeTel_30755 ->
   [MAlonzo.Code.Ledger.GovernanceActions.T_GovVote_734]
-d_'46'generalizedField'45'vs_30689 v0
+d_'46'generalizedField'45'vs_30745 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v5
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v5
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-wdrls
-d_'46'generalizedField'45'wdrls_30691 ::
-  T_GeneralizeTel_30699 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'wdrls_30691 v0
+d_'46'generalizedField'45'wdrls_30747 ::
+  T_GeneralizeTel_30755 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'wdrls_30747 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v6
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v6
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-ccKeys
-d_'46'generalizedField'45'ccKeys_30693 ::
-  T_GeneralizeTel_30699 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'ccKeys_30693 v0
+d_'46'generalizedField'45'ccKeys_30749 ::
+  T_GeneralizeTel_30755 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'ccKeys_30749 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v7
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v7
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-dep
-d_'46'generalizedField'45'dep_30695 ::
-  T_GeneralizeTel_30699 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'dep_30695 v0
+d_'46'generalizedField'45'dep_30751 ::
+  T_GeneralizeTel_30755 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'dep_30751 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v8
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v8
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-an
-d_'46'generalizedField'45'an_30697 ::
-  T_GeneralizeTel_30699 ->
+d_'46'generalizedField'45'an_30753 ::
+  T_GeneralizeTel_30755 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682
-d_'46'generalizedField'45'an_30697 v0
+d_'46'generalizedField'45'an_30753 v0
   = case coe v0 of
-      C_mkGeneralizeTel_30701 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v9
+      C_mkGeneralizeTel_30757 v1 v2 v3 v4 v5 v6 v7 v8 v9 -> coe v9
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs.GeneralizeTel
-d_GeneralizeTel_30699 a0 = ()
-data T_GeneralizeTel_30699
-  = C_mkGeneralizeTel_30701 Integer
+d_GeneralizeTel_30755 a0 = ()
+data T_GeneralizeTel_30755
+  = C_mkGeneralizeTel_30757 Integer
                             MAlonzo.Code.Ledger.Address.T_Credential_16
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 AgdaAny
                             [MAlonzo.Code.Ledger.GovernanceActions.T_GovVote_734]
@@ -1095,106 +1095,106 @@ data T_GeneralizeTel_30699
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
                             MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682
 -- Ledger.Conway.Conformance.Certs..generalizedField-pp
-d_'46'generalizedField'45'pp_40073 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Ledger.PParams.T_PParams_244
-d_'46'generalizedField'45'pp_40073 v0
+d_'46'generalizedField'45'pp_40129 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Ledger.PParams.T_PParams_244
+d_'46'generalizedField'45'pp_40129 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-vs
-d_'46'generalizedField'45'vs_40075 ::
-  T_GeneralizeTel_40097 ->
+d_'46'generalizedField'45'vs_40131 ::
+  T_GeneralizeTel_40153 ->
   [MAlonzo.Code.Ledger.GovernanceActions.T_GovVote_734]
-d_'46'generalizedField'45'vs_40075 v0
+d_'46'generalizedField'45'vs_40131 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-e
-d_'46'generalizedField'45'e_40077 ::
-  T_GeneralizeTel_40097 -> AgdaAny
-d_'46'generalizedField'45'e_40077 v0
+d_'46'generalizedField'45'e_40133 ::
+  T_GeneralizeTel_40153 -> AgdaAny
+d_'46'generalizedField'45'e_40133 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-dReps
-d_'46'generalizedField'45'dReps_40079 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'dReps_40079 v0
+d_'46'generalizedField'45'dReps_40135 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'dReps_40135 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v4
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-wdrls
-d_'46'generalizedField'45'wdrls_40081 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'wdrls_40081 v0
+d_'46'generalizedField'45'wdrls_40137 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'wdrls_40137 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v5
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-voteDelegs
-d_'46'generalizedField'45'voteDelegs_40083 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'voteDelegs_40083 v0
+d_'46'generalizedField'45'voteDelegs_40139 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'voteDelegs_40139 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v6
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-rewards
-d_'46'generalizedField'45'rewards_40085 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'rewards_40085 v0
+d_'46'generalizedField'45'rewards_40141 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'rewards_40141 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v7
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-stakeDelegs
-d_'46'generalizedField'45'stakeDelegs_40087 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'stakeDelegs_40087 v0
+d_'46'generalizedField'45'stakeDelegs_40143 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'stakeDelegs_40143 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v8
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-ddep
-d_'46'generalizedField'45'ddep_40089 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'ddep_40089 v0
+d_'46'generalizedField'45'ddep_40145 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'ddep_40145 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v9
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-stᵖ
-d_'46'generalizedField'45'st'7510'_40091 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Ledger.Certs.T_PState_904
-d_'46'generalizedField'45'st'7510'_40091 v0
+d_'46'generalizedField'45'st'7510'_40147 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Ledger.Certs.T_PState_904
+d_'46'generalizedField'45'st'7510'_40147 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v10
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-ccHotKeys
-d_'46'generalizedField'45'ccHotKeys_40093 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'ccHotKeys_40093 v0
+d_'46'generalizedField'45'ccHotKeys_40149 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'ccHotKeys_40149 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v11
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs..generalizedField-gdep
-d_'46'generalizedField'45'gdep_40095 ::
-  T_GeneralizeTel_40097 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_'46'generalizedField'45'gdep_40095 v0
+d_'46'generalizedField'45'gdep_40151 ::
+  T_GeneralizeTel_40153 -> MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
+d_'46'generalizedField'45'gdep_40151 v0
   = case coe v0 of
-      C_mkGeneralizeTel_40099 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
+      C_mkGeneralizeTel_40155 v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12
         -> coe v12
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Certs.GeneralizeTel
-d_GeneralizeTel_40097 a0 = ()
-data T_GeneralizeTel_40097
-  = C_mkGeneralizeTel_40099 MAlonzo.Code.Ledger.PParams.T_PParams_244
+d_GeneralizeTel_40153 a0 = ()
+data T_GeneralizeTel_40153
+  = C_mkGeneralizeTel_40155 MAlonzo.Code.Ledger.PParams.T_PParams_244
                             [MAlonzo.Code.Ledger.GovernanceActions.T_GovVote_734] AgdaAny
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
                             MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
