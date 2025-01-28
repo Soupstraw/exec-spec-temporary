@@ -759,7 +759,7 @@ d_Computational'45'GOV''_1296 ::
 d_Computational'45'GOV''_1296 v0
   = coe
       MAlonzo.Code.Interface.ComputationalRelation.C_MkComputational_412
-      (d_computeProof_1672 (coe v0))
+      (d_computeProof_1676 (coe v0))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoVote.computeProof
 d_computeProof_1338 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
@@ -785,101 +785,147 @@ d_computeProof_1338 v0 v1 v2 v3
     coe
       (case coe v4 of
          MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v5 v6
-           -> case coe v5 of
-                MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v7 v8
-                  -> let v9
-                           = seq
-                               (coe v6)
+           -> let v7
+                    = case coe v6 of
+                        MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v7 v8
+                          -> coe
+                               seq (coe v7)
                                (coe
-                                  MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
+                                  seq (coe v8)
                                   (coe
-                                     ("Reflects\n(isRegistered (.proj\8321 \915)\n (.Ledger.GovernanceActions.GovVote.voter sig))\ndoes\8321"
-                                      ::
-                                      Data.Text.Text))) in
-                     coe
-                       (case coe v7 of
-                          MAlonzo.Code.Agda.Builtin.Bool.C_true_10
-                            -> case coe v8 of
-                                 MAlonzo.Code.Relation.Nullary.Reflects.C_of'696'_22 v10
-                                   -> case coe v6 of
-                                        MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v11 v12
-                                          -> case coe v11 of
-                                               MAlonzo.Code.Agda.Builtin.Bool.C_true_10
-                                                 -> case coe v12 of
-                                                      MAlonzo.Code.Relation.Nullary.Reflects.C_of'696'_22 v13
-                                                        -> let v14
-                                                                 = coe
-                                                                     MAlonzo.Code.Function.Bundles.d_from_1974
-                                                                     (coe
-                                                                        MAlonzo.Code.Data.List.Membership.Propositional.Properties.Core.du_Any'8596'_144
-                                                                        (coe v2))
-                                                                     v10 in
-                                                           coe
-                                                             (case coe v14 of
-                                                                MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v15 v16
-                                                                  -> case coe v16 of
-                                                                       MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v17 v18
-                                                                         -> case coe v18 of
-                                                                              MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v19 v20
-                                                                                -> case coe v3 of
-                                                                                     MAlonzo.Code.Ledger.GovernanceActions.C_GovVote'46'constructor_6237 v21 v22 v23 v24
-                                                                                       -> coe
-                                                                                            MAlonzo.Code.Interface.ComputationalRelation.C_success_42
-                                                                                            (coe
-                                                                                               MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
+                                     MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
+                                     (coe
+                                        ("\172\nisRegistered (.proj\8321 \915)\n(.Ledger.GovernanceActions.GovVote.voter sig)"
+                                         ::
+                                         Data.Text.Text))))
+                        _ -> MAlonzo.RTE.mazUnreachableError in
+              coe
+                (case coe v5 of
+                   MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v8 v9
+                     -> let v10
+                              = case coe v6 of
+                                  MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v10 v11
+                                    -> case coe v10 of
+                                         MAlonzo.Code.Agda.Builtin.Bool.C_false_8
+                                           -> case coe v11 of
+                                                MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26
+                                                  -> coe
+                                                       MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
+                                                       (coe
+                                                          ("\172\nisRegistered (.proj\8321 \915)\n(.Ledger.GovernanceActions.GovVote.voter sig)"
+                                                           ::
+                                                           Data.Text.Text))
+                                                _ -> coe v7
+                                         _ -> coe v7
+                                  _ -> MAlonzo.RTE.mazUnreachableError in
+                        coe
+                          (if coe v8
+                             then case coe v9 of
+                                    MAlonzo.Code.Relation.Nullary.Reflects.C_of'696'_22 v11
+                                      -> case coe v6 of
+                                           MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v12 v13
+                                             -> case coe v12 of
+                                                  MAlonzo.Code.Agda.Builtin.Bool.C_true_10
+                                                    -> case coe v13 of
+                                                         MAlonzo.Code.Relation.Nullary.Reflects.C_of'696'_22 v14
+                                                           -> let v15
+                                                                    = coe
+                                                                        MAlonzo.Code.Function.Bundles.d_from_1974
+                                                                        (coe
+                                                                           MAlonzo.Code.Data.List.Membership.Propositional.Properties.Core.du_Any'8596'_144
+                                                                           (coe v2))
+                                                                        v11 in
+                                                              coe
+                                                                (case coe v15 of
+                                                                   MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v16 v17
+                                                                     -> case coe v17 of
+                                                                          MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v18 v19
+                                                                            -> case coe v19 of
+                                                                                 MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v20 v21
+                                                                                   -> case coe v3 of
+                                                                                        MAlonzo.Code.Ledger.GovernanceActions.C_GovVote'46'constructor_6237 v22 v23 v24 v25
+                                                                                          -> coe
+                                                                                               MAlonzo.Code.Interface.ComputationalRelation.C_success_42
                                                                                                (coe
-                                                                                                  MAlonzo.Code.Ledger.Gov.d_addVote_2014
+                                                                                                  MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
                                                                                                   (coe
-                                                                                                     v0)
-                                                                                                  (coe
-                                                                                                     v2)
-                                                                                                  (coe
-                                                                                                     MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
+                                                                                                     MAlonzo.Code.Ledger.Gov.d_addVote_2014
                                                                                                      (coe
-                                                                                                        v15))
-                                                                                                  (coe
-                                                                                                     v22)
-                                                                                                  (coe
-                                                                                                     v23))
-                                                                                               (coe
-                                                                                                  MAlonzo.Code.Ledger.Conway.Conformance.Gov.C_GOV'45'Vote_2122
-                                                                                                  (MAlonzo.Code.Agda.Builtin.Sigma.d_snd_30
+                                                                                                        v0)
                                                                                                      (coe
-                                                                                                        v15))
-                                                                                                  (coe
-                                                                                                     MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
+                                                                                                        v2)
                                                                                                      (coe
-                                                                                                        MAlonzo.Code.Function.Bundles.d_to_1724
+                                                                                                        MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
                                                                                                         (coe
-                                                                                                           MAlonzo.Code.Axiom.Set.du_'8712''45'fromList_432
-                                                                                                           (coe
-                                                                                                              MAlonzo.Code.Axiom.Set.d_th_1470
-                                                                                                              (coe
-                                                                                                                 MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
-                                                                                                           (coe
-                                                                                                              v2)
-                                                                                                           (coe
-                                                                                                              v15))
-                                                                                                        v17)
+                                                                                                           v16))
+                                                                                                     (coe
+                                                                                                        v23)
+                                                                                                     (coe
+                                                                                                        v24))
+                                                                                                  (coe
+                                                                                                     MAlonzo.Code.Ledger.Conway.Conformance.Gov.C_GOV'45'Vote_2122
+                                                                                                     (MAlonzo.Code.Agda.Builtin.Sigma.d_snd_30
+                                                                                                        (coe
+                                                                                                           v16))
                                                                                                      (coe
                                                                                                         MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
                                                                                                         (coe
-                                                                                                           v20)
+                                                                                                           MAlonzo.Code.Function.Bundles.d_to_1724
+                                                                                                           (coe
+                                                                                                              MAlonzo.Code.Axiom.Set.du_'8712''45'fromList_432
+                                                                                                              (coe
+                                                                                                                 MAlonzo.Code.Axiom.Set.d_th_1470
+                                                                                                                 (coe
+                                                                                                                    MAlonzo.Code.QabstractZ45ZsetZ45Ztheory.FiniteSetTheory.d_List'45'Model'7496'_8))
+                                                                                                              (coe
+                                                                                                                 v2)
+                                                                                                              (coe
+                                                                                                                 v16))
+                                                                                                           v18)
                                                                                                         (coe
-                                                                                                           v13)))))
-                                                                                     _ -> MAlonzo.RTE.mazUnreachableError
-                                                                              _ -> MAlonzo.RTE.mazUnreachableError
-                                                                       _ -> MAlonzo.RTE.mazUnreachableError
-                                                                _ -> MAlonzo.RTE.mazUnreachableError)
-                                                      _ -> coe v9
-                                               _ -> coe v9
-                                        _ -> MAlonzo.RTE.mazUnreachableError
-                                 _ -> coe v9
-                          _ -> coe v9)
-                _ -> MAlonzo.RTE.mazUnreachableError
+                                                                                                           MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32
+                                                                                                           (coe
+                                                                                                              v21)
+                                                                                                           (coe
+                                                                                                              v14)))))
+                                                                                        _ -> MAlonzo.RTE.mazUnreachableError
+                                                                                 _ -> MAlonzo.RTE.mazUnreachableError
+                                                                          _ -> MAlonzo.RTE.mazUnreachableError
+                                                                   _ -> MAlonzo.RTE.mazUnreachableError)
+                                                         _ -> coe v10
+                                                  _ -> coe v10
+                                           _ -> MAlonzo.RTE.mazUnreachableError
+                                    _ -> coe v10
+                             else (case coe v9 of
+                                     MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26
+                                       -> case coe v6 of
+                                            MAlonzo.Code.Relation.Nullary.Decidable.Core.C__because__32 v12 v13
+                                              -> let v14
+                                                       = coe
+                                                           MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
+                                                           (coe
+                                                              ("Dec\n(isRegistered (.proj\8321 \915)\n (.Ledger.GovernanceActions.GovVote.voter sig))"
+                                                               ::
+                                                               Data.Text.Text)) in
+                                                 coe
+                                                   (case coe v12 of
+                                                      MAlonzo.Code.Agda.Builtin.Bool.C_false_8
+                                                        -> case coe v13 of
+                                                             MAlonzo.Code.Relation.Nullary.Reflects.C_of'8319'_26
+                                                               -> coe
+                                                                    MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
+                                                                    (coe
+                                                                       ("\172\nisRegistered (.proj\8321 \915)\n(.Ledger.GovernanceActions.GovVote.voter sig)"
+                                                                        ::
+                                                                        Data.Text.Text))
+                                                             _ -> coe v14
+                                                      _ -> coe v14)
+                                            _ -> MAlonzo.RTE.mazUnreachableError
+                                     _ -> coe v10))
+                   _ -> MAlonzo.RTE.mazUnreachableError)
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoVote.completeness
-d_completeness_1358 ::
+d_completeness_1362 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -887,32 +933,32 @@ d_completeness_1358 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1358 = erased
+d_completeness_1362 = erased
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp._
-d___1508 ::
+d___1512 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_690 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-d___1508 v0 ~v1 ~v2 ~v3 = du___1508 v0
-du___1508 ::
+d___1512 v0 ~v1 ~v2 ~v3 = du___1512 v0
+du___1512 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_690 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-du___1508 v0
+du___1512 v0
   = coe
       MAlonzo.Code.Ledger.GovernanceActions.d_actionWellFormed'63'_716
       (coe MAlonzo.Code.Ledger.Transaction.d_govStructure_2322 (coe v0))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.H
-d_H_1510 ::
+d_H_1514 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_H_1510 v0 v1 v2 v3
+d_H_1514 v0 v1 v2 v3
   = coe
       MAlonzo.Code.Data.Product.Base.du__'44''8242'__84
       (coe
@@ -920,7 +966,7 @@ d_H_1510 v0 v1 v2 v3
          (coe
             MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
             (coe
-               du___1508 v0
+               du___1512 v0
                (MAlonzo.Code.Ledger.GovernanceActions.d_action_764 (coe v3)))
             (coe
                MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
@@ -1023,14 +1069,14 @@ d_H_1510 v0 v1 v2 v3
          du_isUpdateCommittee_1194
          (coe MAlonzo.Code.Ledger.GovernanceActions.d_action_764 (coe v3)))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.computeProof
-d_computeProof_1520 ::
+d_computeProof_1524 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_ComputationResult_34
-d_computeProof_1520 v0 v1 v2 v3
-  = let v4 = d_H_1510 (coe v0) (coe v1) (coe v2) (coe v3) in
+d_computeProof_1524 v0 v1 v2 v3
+  = let v4 = d_H_1514 (coe v0) (coe v1) (coe v2) (coe v3) in
     coe
       (case coe v4 of
          MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v5 v6
@@ -1578,7 +1624,7 @@ d_computeProof_1520 v0 v1 v2 v3
                                         = coe
                                             MAlonzo.Code.Ledger.Prelude.du_dec'45'de'45'morgan_8
                                             (coe
-                                               du___1508 v0
+                                               du___1512 v0
                                                (MAlonzo.Code.Ledger.GovernanceActions.d_action_764
                                                   (coe v3)))
                                             erased in
@@ -1773,7 +1819,7 @@ d_computeProof_1520 v0 v1 v2 v3
                 _ -> MAlonzo.RTE.mazUnreachableError
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.completeness
-d_completeness_1576 ::
+d_completeness_1580 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -1781,23 +1827,23 @@ d_completeness_1576 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1576 = erased
+d_completeness_1580 = erased
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.computeProof
-d_computeProof_1672 ::
+d_computeProof_1676 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Data.Sum.Base.T__'8846'__30 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_ComputationResult_34
-d_computeProof_1672 v0 v1 v2 v3
+d_computeProof_1676 v0 v1 v2 v3
   = case coe v3 of
       MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 v4
         -> coe d_computeProof_1338 (coe v0) (coe v1) (coe v2) (coe v4)
       MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v4
-        -> coe d_computeProof_1520 (coe v0) (coe v1) (coe v2) (coe v4)
+        -> coe d_computeProof_1524 (coe v0) (coe v1) (coe v2) (coe v4)
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.completeness
-d_completeness_1682 ::
+d_completeness_1686 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -1805,12 +1851,12 @@ d_completeness_1682 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1682 = erased
+d_completeness_1686 = erased
 -- Ledger.Conway.Conformance.Gov.Properties.Computational-GOV
-d_Computational'45'GOV_1688 ::
+d_Computational'45'GOV_1692 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
-d_Computational'45'GOV_1688 v0
+d_Computational'45'GOV_1692 v0
   = coe
       MAlonzo.Code.Interface.ComputationalRelation.du_Computational'45'ReflexiveTransitiveClosure'7522''7495'_1100
       (coe
