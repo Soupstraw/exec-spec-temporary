@@ -544,7 +544,7 @@ d_Computational'45'GOV''_1296 ::
 d_Computational'45'GOV''_1296 v0
   = coe
       MAlonzo.Code.Interface.ComputationalRelation.C_MkComputational_412
-      (d_computeProof_1714 (coe v0))
+      (d_computeProof_1704 (coe v0))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoVote.computeProof
 d_computeProof_1340 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
@@ -672,7 +672,7 @@ d_computeProof_1340 v0 v1 v2 v3
                                                (coe
                                                   MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
                                                   (coe
-                                                     ("\172 (isRegistered (proj\8321 \915) voter)"
+                                                     ("Any\n(\955 .patternInTele0 \8594\n   \931\n   (.Ledger.GovernanceActions.GovVote.gid sig \8801\n    .proj\8321 .patternInTele0)\n   (\955 x \8594\n      Data.Maybe.Relation.Unary.Any.Any (\955 z \8594 \8868)\n      ((\955 { Ledger.GovernanceActions.GovAction.NoConfidence\n              \8594 Ledger.Ratify.\8739 txs \8739 Ledger.Ratify.\9472 txs \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P1\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.vote txs\n                 (.Ledger.PParams.PoolThresholds.Q1\n                  (.Ledger.PParams.PParams.poolThresholds\n                   (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)))))\n          ; (Ledger.GovernanceActions.GovAction.UpdateCommittee x\8321 x\8322 x)\n              \8594 Ledger.Ratify.\8739 txs \8741 Ledger.Ratify.\9472 txs \8739\n                (Ledger.Ratify.P/Q2a/b txs\n                 (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing)\n          ; (Ledger.GovernanceActions.GovAction.NewConstitution x\8321 x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P3\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.\9472 txs)\n          ; (Ledger.GovernanceActions.GovAction.TriggerHF x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P4\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.vote txs\n                 (.Ledger.PParams.PoolThresholds.Q4\n                  (.Ledger.PParams.PParams.poolThresholds\n                   (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)))))\n          ; (Ledger.GovernanceActions.GovAction.ChangePParams x)\n              \8594 Ledger.Ratify.\8739 txs \8741\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                (Ledger.Ratify.P/Q5 txs\n                 (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                 x)\n          ; (Ledger.GovernanceActions.GovAction.TreasuryWdrl x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P6\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.\9472 txs)\n          ; Ledger.GovernanceActions.GovAction.Info\n              \8594 Ledger.Ratify.\8739 txs \8739 Ledger.Ratify.\10003\8224 txs \8739 Ledger.Ratify.\10003\8224 txs\n                \8739\n                (Ledger.Ratify.\10003\8224 txs)\n          })\n       (.Ledger.GovernanceActions.GovActionState.action\n        (.proj\8322 .patternInTele0))\n       (.proj\8321 (.Ledger.GovernanceActions.GovVote.voter sig)))))\ns"
                                                       ::
                                                       Data.Text.Text)))
                                  _ -> MAlonzo.RTE.mazUnreachableError)
@@ -682,12 +682,12 @@ d_computeProof_1340 v0 v1 v2 v3
                        (coe
                           MAlonzo.Code.Interface.ComputationalRelation.C_failure_44
                           (coe
-                             ("\172 (lookupActionId pparams (proj\8321 voter) gid s)"
+                             ("\172\nAny\n(\955 .patternInTele0 \8594\n   \931\n   (.Ledger.GovernanceActions.GovVote.gid sig \8801\n    .proj\8321 .patternInTele0)\n   (\955 x \8594\n      Data.Maybe.Relation.Unary.Any.Any (\955 z \8594 \8868)\n      ((\955 { Ledger.GovernanceActions.GovAction.NoConfidence\n              \8594 Ledger.Ratify.\8739 txs \8739 Ledger.Ratify.\9472 txs \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P1\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.vote txs\n                 (.Ledger.PParams.PoolThresholds.Q1\n                  (.Ledger.PParams.PParams.poolThresholds\n                   (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)))))\n          ; (Ledger.GovernanceActions.GovAction.UpdateCommittee x\8321 x\8322 x)\n              \8594 Ledger.Ratify.\8739 txs \8741 Ledger.Ratify.\9472 txs \8739\n                (Ledger.Ratify.P/Q2a/b txs\n                 (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing)\n          ; (Ledger.GovernanceActions.GovAction.NewConstitution x\8321 x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P3\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.\9472 txs)\n          ; (Ledger.GovernanceActions.GovAction.TriggerHF x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P4\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.vote txs\n                 (.Ledger.PParams.PoolThresholds.Q4\n                  (.Ledger.PParams.PParams.poolThresholds\n                   (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)))))\n          ; (Ledger.GovernanceActions.GovAction.ChangePParams x)\n              \8594 Ledger.Ratify.\8739 txs \8741\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                (Ledger.Ratify.P/Q5 txs\n                 (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                 x)\n          ; (Ledger.GovernanceActions.GovAction.TreasuryWdrl x)\n              \8594 Ledger.Ratify.\8739 txs \8739\n                Ledger.Ratify.\10003 txs\n                (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915)) nothing\n                \8739\n                Ledger.Ratify.vote txs\n                (.Ledger.PParams.DrepThresholds.P6\n                 (.Ledger.PParams.PParams.drepThresholds\n                  (.Ledger.Conway.Conformance.Gov.GovEnv.pparams (.proj\8321 \915))))\n                \8739\n                (Ledger.Ratify.\9472 txs)\n          ; Ledger.GovernanceActions.GovAction.Info\n              \8594 Ledger.Ratify.\8739 txs \8739 Ledger.Ratify.\10003\8224 txs \8739 Ledger.Ratify.\10003\8224 txs\n                \8739\n                (Ledger.Ratify.\10003\8224 txs)\n          })\n       (.Ledger.GovernanceActions.GovActionState.action\n        (.proj\8322 .patternInTele0))\n       (.proj\8321 (.Ledger.GovernanceActions.GovVote.voter sig)))))\ns"
                               ::
                               Data.Text.Text)))
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoVote.completeness
-d_completeness_1384 ::
+d_completeness_1374 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -695,32 +695,32 @@ d_completeness_1384 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1384 = erased
+d_completeness_1374 = erased
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp._
-d___1550 ::
+d___1540 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_690 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-d___1550 v0 ~v1 ~v2 ~v3 = du___1550 v0
-du___1550 ::
+d___1540 v0 ~v1 ~v2 ~v3 = du___1540 v0
+du___1540 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_690 ->
   MAlonzo.Code.Class.Decidable.Core.T__'8263'_10
-du___1550 v0
+du___1540 v0
   = coe
       MAlonzo.Code.Ledger.GovernanceActions.d_actionWellFormed'63'_716
       (coe MAlonzo.Code.Ledger.Transaction.d_govStructure_2322 (coe v0))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.H
-d_H_1552 ::
+d_H_1542 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_H_1552 v0 v1 v2 v3
+d_H_1542 v0 v1 v2 v3
   = coe
       MAlonzo.Code.Data.Product.Base.du__'44''8242'__84
       (coe
@@ -728,7 +728,7 @@ d_H_1552 v0 v1 v2 v3
          (coe
             MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
             (coe
-               du___1550 v0
+               du___1540 v0
                (MAlonzo.Code.Ledger.GovernanceActions.d_action_764 (coe v3)))
             (coe
                MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
@@ -831,14 +831,14 @@ d_H_1552 v0 v1 v2 v3
          du_isUpdateCommittee_1194
          (coe MAlonzo.Code.Ledger.GovernanceActions.d_action_764 (coe v3)))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.computeProof
-d_computeProof_1562 ::
+d_computeProof_1552 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_750 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_ComputationResult_34
-d_computeProof_1562 v0 v1 v2 v3
-  = let v4 = d_H_1552 (coe v0) (coe v1) (coe v2) (coe v3) in
+d_computeProof_1552 v0 v1 v2 v3
+  = let v4 = d_H_1542 (coe v0) (coe v1) (coe v2) (coe v3) in
     coe
       (case coe v4 of
          MAlonzo.Code.Agda.Builtin.Sigma.C__'44'__32 v5 v6
@@ -1386,7 +1386,7 @@ d_computeProof_1562 v0 v1 v2 v3
                                         = coe
                                             MAlonzo.Code.Ledger.Prelude.du_dec'45'de'45'morgan_8
                                             (coe
-                                               du___1550 v0
+                                               du___1540 v0
                                                (MAlonzo.Code.Ledger.GovernanceActions.d_action_764
                                                   (coe v3)))
                                             erased in
@@ -1581,7 +1581,7 @@ d_computeProof_1562 v0 v1 v2 v3
                 _ -> MAlonzo.RTE.mazUnreachableError
          _ -> MAlonzo.RTE.mazUnreachableError)
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoProp.completeness
-d_completeness_1618 ::
+d_completeness_1608 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -1589,23 +1589,23 @@ d_completeness_1618 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1618 = erased
+d_completeness_1608 = erased
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.computeProof
-d_computeProof_1714 ::
+d_computeProof_1704 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Data.Sum.Base.T__'8846'__30 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_ComputationResult_34
-d_computeProof_1714 v0 v1 v2 v3
+d_computeProof_1704 v0 v1 v2 v3
   = case coe v3 of
       MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 v4
         -> coe d_computeProof_1340 (coe v0) (coe v1) (coe v2) (coe v4)
       MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v4
-        -> coe d_computeProof_1562 (coe v0) (coe v1) (coe v2) (coe v4)
+        -> coe d_computeProof_1552 (coe v0) (coe v1) (coe v2) (coe v4)
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.completeness
-d_completeness_1724 ::
+d_completeness_1714 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
@@ -1613,12 +1613,12 @@ d_completeness_1724 ::
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.Conway.Conformance.Gov.T__'8866'_'8640''10631'_'44'GOV'''10632'__2100 ->
   MAlonzo.Code.Agda.Builtin.Equality.T__'8801'__12
-d_completeness_1724 = erased
+d_completeness_1714 = erased
 -- Ledger.Conway.Conformance.Gov.Properties.Computational-GOV
-d_Computational'45'GOV_1730 ::
+d_Computational'45'GOV_1720 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Interface.ComputationalRelation.T_Computational_232
-d_Computational'45'GOV_1730 v0
+d_Computational'45'GOV_1720 v0
   = coe
       MAlonzo.Code.Interface.ComputationalRelation.du_Computational'45'ReflexiveTransitiveClosure'7522''7495'_1100
       (coe
