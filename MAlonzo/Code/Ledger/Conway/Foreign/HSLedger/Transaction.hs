@@ -1943,7 +1943,7 @@ check_MkTxBody_11479 ::
     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.Core.T_GovVote_1531 ->
   MAlonzo.Code.Agda.Builtin.List.T_List_10
     ()
-    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovProposal_7121 ->
+    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovProposal_6515 ->
   Integer ->
   MAlonzo.Code.Agda.Builtin.Maybe.T_Maybe_10
     ()

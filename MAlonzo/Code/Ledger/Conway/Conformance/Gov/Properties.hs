@@ -373,7 +373,7 @@ d_canVote_966 = erased
 -- Ledger.Conway.Conformance.Gov.Properties.L._.actionWellFormed
 d_actionWellFormed_1068 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  [MAlonzo.Code.Ledger.Address.T_Credential_16] ->
   Maybe AgdaAny ->
   Maybe AgdaAny ->
   AgdaAny ->
@@ -674,19 +674,19 @@ du_ppolicy_1324 v0
   = coe
       MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_ppolicy_2058
       (coe MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28 (coe v0))
--- Ledger.Conway.Conformance.Gov.Properties._.Go._.stakeCreds
-d_stakeCreds_1326 ::
+-- Ledger.Conway.Conformance.Gov.Properties._.Go._.rewardCreds
+d_rewardCreds_1326 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-d_stakeCreds_1326 ~v0 v1 ~v2 = du_stakeCreds_1326 v1
-du_stakeCreds_1326 ::
+  [MAlonzo.Code.Ledger.Address.T_Credential_16]
+d_rewardCreds_1326 ~v0 v1 ~v2 = du_rewardCreds_1326 v1
+du_rewardCreds_1326 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14
-du_stakeCreds_1326 v0
+  [MAlonzo.Code.Ledger.Address.T_Credential_16]
+du_rewardCreds_1326 v0
   = coe
-      MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_stakeCreds_2064
+      MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_rewardCreds_2064
       (coe MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28 (coe v0))
 -- Ledger.Conway.Conformance.Gov.Properties._.Go.GoVote.computeProof
 d_computeProof_1346 ::
@@ -824,7 +824,7 @@ d_Dec'45'actionWellFormed_1516 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_740 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  [MAlonzo.Code.Ledger.Address.T_Credential_16] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692 ->
   Maybe AgdaAny ->
   Maybe AgdaAny ->
@@ -833,7 +833,7 @@ d_Dec'45'actionWellFormed_1516 v0 ~v1 ~v2 ~v3
   = du_Dec'45'actionWellFormed_1516 v0
 du_Dec'45'actionWellFormed_1516 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  [MAlonzo.Code.Ledger.Address.T_Credential_16] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692 ->
   Maybe AgdaAny ->
   Maybe AgdaAny ->
@@ -856,7 +856,7 @@ d_H_1518 v0 v1 v2 v3
             MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
             (coe
                du_Dec'45'actionWellFormed_1516 v0
-               (MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_stakeCreds_2064
+               (MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_rewardCreds_2064
                   (coe MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28 (coe v1)))
                (MAlonzo.Code.Ledger.GovernanceActions.d_action_754 (coe v3))
                (MAlonzo.Code.Ledger.GovernanceActions.d_policy_758 (coe v3))
@@ -933,7 +933,7 @@ du_genErrorsWellFormed_1522 v0 v1 v2 v3
   = case coe v3 of
       MAlonzo.Code.Ledger.GovernanceActions.C_NoConfidence_694
         -> coe
-             ("\172\nL.actionWellFormed stakeCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\nLedger.GovernanceActions.GovAction.NoConfidence"
+             ("\172\nL.actionWellFormed rewardCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\nLedger.GovernanceActions.GovAction.NoConfidence"
               ::
               Data.Text.Text)
       MAlonzo.Code.Ledger.GovernanceActions.C_UpdateCommittee_696 v4 v5 v6
@@ -965,12 +965,12 @@ du_genErrorsWellFormed_1522 v0 v1 v2 v3
                 _ -> MAlonzo.RTE.mazUnreachableError)
       MAlonzo.Code.Ledger.GovernanceActions.C_NewConstitution_698 v4 v5
         -> coe
-             ("\172\nL.actionWellFormed stakeCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\n(Ledger.GovernanceActions.GovAction.NewConstitution x x\8321)"
+             ("\172\nL.actionWellFormed rewardCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\n(Ledger.GovernanceActions.GovAction.NewConstitution x x\8321)"
               ::
               Data.Text.Text)
       MAlonzo.Code.Ledger.GovernanceActions.C_TriggerHF_700 v4
         -> coe
-             ("\172\nL.actionWellFormed stakeCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\n(Ledger.GovernanceActions.GovAction.TriggerHF x)"
+             ("\172\nL.actionWellFormed rewardCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\n(Ledger.GovernanceActions.GovAction.TriggerHF x)"
               ::
               Data.Text.Text)
       MAlonzo.Code.Ledger.GovernanceActions.C_ChangePParams_702 v4
@@ -1120,7 +1120,7 @@ du_genErrorsWellFormed_1522 v0 v1 v2 v3
                                             Data.Text.Text)
                                     MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v10
                                       -> coe
-                                           ("\172\n(HasSubset-Set HasSubset.\8838\n Axiom.Set.Theory.map (.Axiom.Set.Theory\7496.th List-Model\7496)\n (\955 r \8594 .Ledger.Address.RwdAddr.stake r)\n (Class.IsSet.dom (.Axiom.Set.Theory\7496.th List-Model\7496) x))\n(Class.IsSet.dom (.Axiom.Set.Theory\7496.th List-Model\7496) stakeCreds)"
+                                           ("\172\n(HasSubset-Set HasSubset.\8838\n Axiom.Set.Theory.map (.Axiom.Set.Theory\7496.th List-Model\7496)\n (\955 r \8594 .Ledger.Address.RwdAddr.stake r)\n (Class.IsSet.dom (.Axiom.Set.Theory\7496.th List-Model\7496) x))\nrewardCreds"
                                             ::
                                             Data.Text.Text)
                                     _ -> MAlonzo.RTE.mazUnreachableError)
@@ -1128,7 +1128,7 @@ du_genErrorsWellFormed_1522 v0 v1 v2 v3
                 _ -> MAlonzo.RTE.mazUnreachableError)
       MAlonzo.Code.Ledger.GovernanceActions.C_Info_706
         -> coe
-             ("\172\nL.actionWellFormed stakeCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\nLedger.GovernanceActions.GovAction.Info"
+             ("\172\nL.actionWellFormed rewardCreds\n(.Ledger.GovernanceActions.GovProposal.policy prop) ppolicy epoch\nLedger.GovernanceActions.GovAction.Info"
               ::
               Data.Text.Text)
       _ -> MAlonzo.RTE.mazUnreachableError
@@ -1644,7 +1644,7 @@ d_computeProof_1538 v0 v1 v2 v3
                                             MAlonzo.Code.Ledger.Gov.d_actionWellFormed'63'_2508
                                             (coe v0)
                                             (coe
-                                               MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_stakeCreds_2064
+                                               MAlonzo.Code.Ledger.Conway.Conformance.Gov.d_rewardCreds_2064
                                                (coe
                                                   MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
                                                   (coe v1)))

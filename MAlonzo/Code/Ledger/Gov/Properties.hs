@@ -1070,7 +1070,7 @@ d_Dec'45'actionWellFormed_1552 ::
   MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
   [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovProposal_740 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  [MAlonzo.Code.Ledger.Address.T_Credential_16] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692 ->
   Maybe AgdaAny ->
   Maybe AgdaAny ->
@@ -1079,7 +1079,7 @@ d_Dec'45'actionWellFormed_1552 v0 ~v1 ~v2 ~v3
   = du_Dec'45'actionWellFormed_1552 v0
 du_Dec'45'actionWellFormed_1552 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14 ->
+  [MAlonzo.Code.Ledger.Address.T_Credential_16] ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692 ->
   Maybe AgdaAny ->
   Maybe AgdaAny ->
@@ -1102,7 +1102,7 @@ d_H_1554 v0 v1 v2 v3
             MAlonzo.Code.Class.Decidable.Instances.du_Dec'45''215'_24
             (coe
                du_Dec'45'actionWellFormed_1552 v0
-               (MAlonzo.Code.Ledger.Gov.d_stakeCreds_1906
+               (MAlonzo.Code.Ledger.Gov.d_rewardCreds_1906
                   (coe MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28 (coe v1)))
                (MAlonzo.Code.Ledger.GovernanceActions.d_action_754 (coe v3))
                (MAlonzo.Code.Ledger.GovernanceActions.d_policy_758 (coe v3))
@@ -1669,7 +1669,7 @@ d_computeProof_1556 v0 v1 v2 v3
                                             MAlonzo.Code.Ledger.Prelude.du_dec'45'de'45'morgan_8
                                             (coe
                                                du_Dec'45'actionWellFormed_1552 v0
-                                               (MAlonzo.Code.Ledger.Gov.d_stakeCreds_1906
+                                               (MAlonzo.Code.Ledger.Gov.d_rewardCreds_1906
                                                   (coe
                                                      MAlonzo.Code.Agda.Builtin.Sigma.d_fst_28
                                                      (coe v1)))
@@ -1690,7 +1690,7 @@ d_computeProof_1556 v0 v1 v2 v3
                                     (case coe v9 of
                                        MAlonzo.Code.Data.Sum.Base.C_inj'8321'_38 v10
                                          -> coe
-                                              ("\172\nLedger.Gov.actionWellFormed txs\n(.Ledger.Gov.GovEnv.stakeCreds (.proj\8321 \915))\n(.Ledger.GovernanceActions.GovProposal.policy prop)\n(.Ledger.Gov.GovEnv.ppolicy (.proj\8321 \915))\n(.Ledger.Gov.GovEnv.epoch (.proj\8321 \915))\n(.Ledger.GovernanceActions.GovProposal.action prop)"
+                                              ("\172\nLedger.Gov.actionWellFormed txs\n(.Ledger.Gov.GovEnv.rewardCreds (.proj\8321 \915))\n(.Ledger.GovernanceActions.GovProposal.policy prop)\n(.Ledger.Gov.GovEnv.ppolicy (.proj\8321 \915))\n(.Ledger.Gov.GovEnv.epoch (.proj\8321 \915))\n(.Ledger.GovernanceActions.GovProposal.action prop)"
                                                ::
                                                Data.Text.Text)
                                        MAlonzo.Code.Data.Sum.Base.C_inj'8322'_42 v10

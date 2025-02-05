@@ -3932,7 +3932,7 @@ check_MkLState_2611 ::
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        () ()
        (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22 () () Integer Integer)
-       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005) ->
+       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399) ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Cert.T_CertState_81 ->
   T_LState_2609
 check_MkLState_2611 = MkLState

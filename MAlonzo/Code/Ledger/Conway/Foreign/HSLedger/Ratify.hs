@@ -987,7 +987,7 @@ ratifyDebug ::
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        () ()
        (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22 () () Integer Integer)
-       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005) ->
+       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399) ->
   MAlonzo.Code.Agda.Builtin.String.T_String_6
 ratifyDebug = coe d_ratify'45'debug_218
 d_ratify'45'debug_218 ::
@@ -997,7 +997,7 @@ d_ratify'45'debug_218 ::
      AgdaAny AgdaAny
      (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
         AgdaAny AgdaAny Integer Integer)
-     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005] ->
+     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399] ->
   MAlonzo.Code.Agda.Builtin.String.T_String_6
 d_ratify'45'debug_218 v0 v1 v2
   = coe
@@ -1027,12 +1027,12 @@ d_govActionInfo_246 ::
      AgdaAny AgdaAny
      (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
         AgdaAny AgdaAny Integer Integer)
-     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005] ->
+     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399] ->
   MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
     AgdaAny AgdaAny
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        AgdaAny AgdaAny Integer Integer)
-    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005 ->
+    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399 ->
   MAlonzo.Code.Agda.Builtin.String.T_String_6
 d_govActionInfo_246 v0 v1 ~v2 v3 = du_govActionInfo_246 v0 v1 v3
 du_govActionInfo_246 ::
@@ -1042,7 +1042,7 @@ du_govActionInfo_246 ::
     AgdaAny AgdaAny
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        AgdaAny AgdaAny Integer Integer)
-    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005 ->
+    MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399 ->
   MAlonzo.Code.Agda.Builtin.String.T_String_6
 du_govActionInfo_246 v0 v1 v2
   = case coe v2 of
@@ -3075,7 +3075,7 @@ ratifyStep ::
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        () ()
        (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22 () () Integer Integer)
-       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005) ->
+       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399) ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_ComputationResult_46
     MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_Empty_8
     T_RatifyState_9421
@@ -3087,7 +3087,7 @@ d_ratify'45'step_300 ::
      AgdaAny AgdaAny
      (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
         AgdaAny AgdaAny Integer Integer)
-     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005] ->
+     MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399] ->
   MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_ComputationResult_46
     MAlonzo.Code.Ledger.Conway.Foreign.HSTypes.T_Empty_8
     T_RatifyState_9421
@@ -3165,7 +3165,7 @@ check_MkRatifyState_9423 ::
     (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22
        () ()
        (MAlonzo.Code.Foreign.Haskell.Pair.T_Pair_22 () () Integer Integer)
-       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_11005) ->
+       MAlonzo.Code.Ledger.Conway.Foreign.HSLedger.Gov.T_GovActionState_10399) ->
   Bool -> T_RatifyState_9421
 check_MkRatifyState_9423 = MkRatifyState
 cover_RatifyState_9421 :: RatifyState -> ()
