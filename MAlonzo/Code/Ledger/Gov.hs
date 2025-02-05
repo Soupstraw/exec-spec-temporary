@@ -1769,104 +1769,104 @@ du_txid_2528 v0
 -- Ledger.Gov._.certState
 d_certState_2538 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 ->
   MAlonzo.Code.Ledger.Certs.T_CertState_930
 d_certState_2538 ~v0 v1 ~v2 = du_certState_2538 v1
 du_certState_2538 ::
-  T_GeneralizeTel_65967 -> MAlonzo.Code.Ledger.Certs.T_CertState_930
+  T_GeneralizeTel_66035 -> MAlonzo.Code.Ledger.Certs.T_CertState_930
 du_certState_2538 v0
   = coe
-      d_certState_1904 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+      d_certState_1904 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.enactState
 d_enactState_2540 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 ->
   MAlonzo.Code.Ledger.Enact.T_EnactState_826
 d_enactState_2540 ~v0 v1 ~v2 = du_enactState_2540 v1
 du_enactState_2540 ::
-  T_GeneralizeTel_65967 -> MAlonzo.Code.Ledger.Enact.T_EnactState_826
+  T_GeneralizeTel_66035 -> MAlonzo.Code.Ledger.Enact.T_EnactState_826
 du_enactState_2540 v0
   = coe
-      d_enactState_1902 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+      d_enactState_1902 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.epoch
 d_epoch_2542 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 -> AgdaAny
 d_epoch_2542 ~v0 v1 ~v2 = du_epoch_2542 v1
-du_epoch_2542 :: T_GeneralizeTel_65967 -> AgdaAny
+du_epoch_2542 :: T_GeneralizeTel_66035 -> AgdaAny
 du_epoch_2542 v0
-  = coe d_epoch_1896 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+  = coe d_epoch_1896 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.pparams
 d_pparams_2544 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 ->
   MAlonzo.Code.Ledger.PParams.T_PParams_242
 d_pparams_2544 ~v0 v1 ~v2 = du_pparams_2544 v1
 du_pparams_2544 ::
-  T_GeneralizeTel_65967 -> MAlonzo.Code.Ledger.PParams.T_PParams_242
+  T_GeneralizeTel_66035 -> MAlonzo.Code.Ledger.PParams.T_PParams_242
 du_pparams_2544 v0
   = coe
-      d_pparams_1898 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+      d_pparams_1898 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.ppolicy
 d_ppolicy_2546 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 -> Maybe AgdaAny
 d_ppolicy_2546 ~v0 v1 ~v2 = du_ppolicy_2546 v1
-du_ppolicy_2546 :: T_GeneralizeTel_65967 -> Maybe AgdaAny
+du_ppolicy_2546 :: T_GeneralizeTel_66035 -> Maybe AgdaAny
 du_ppolicy_2546 v0
   = coe
-      d_ppolicy_1900 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+      d_ppolicy_1900 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.rewardCreds
 d_rewardCreds_2548 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 ->
   [MAlonzo.Code.Ledger.Address.T_Credential_16]
 d_rewardCreds_2548 ~v0 v1 ~v2 = du_rewardCreds_2548 v1
 du_rewardCreds_2548 ::
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   [MAlonzo.Code.Ledger.Address.T_Credential_16]
 du_rewardCreds_2548 v0
   = coe
-      d_rewardCreds_1906 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+      d_rewardCreds_1906 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.txid
 d_txid_2550 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 -> AgdaAny
 d_txid_2550 ~v0 v1 ~v2 = du_txid_2550 v1
-du_txid_2550 :: T_GeneralizeTel_65967 -> AgdaAny
+du_txid_2550 :: T_GeneralizeTel_66035 -> AgdaAny
 du_txid_2550 v0
-  = coe d_txid_1894 (coe d_'46'generalizedField'45'Γ_65951 (coe v0))
+  = coe d_txid_1894 (coe d_'46'generalizedField'45'Γ_66019 (coe v0))
 -- Ledger.Gov._.govActionDeposit
 d_govActionDeposit_2576 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 -> Integer
 d_govActionDeposit_2576 ~v0 v1 ~v2 = du_govActionDeposit_2576 v1
-du_govActionDeposit_2576 :: T_GeneralizeTel_65967 -> Integer
+du_govActionDeposit_2576 :: T_GeneralizeTel_66035 -> Integer
 du_govActionDeposit_2576 v0
   = coe
       MAlonzo.Code.Ledger.PParams.d_govActionDeposit_370
       (coe
-         d_pparams_1898 (coe d_'46'generalizedField'45'Γ_65951 (coe v0)))
+         d_pparams_1898 (coe d_'46'generalizedField'45'Γ_66019 (coe v0)))
 -- Ledger.Gov._.govActionLifetime
 d_govActionLifetime_2578 ::
   MAlonzo.Code.Ledger.Transaction.T_TransactionStructure_20 ->
-  T_GeneralizeTel_65967 ->
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_Anchor_682 -> Integer
 d_govActionLifetime_2578 ~v0 v1 ~v2 = du_govActionLifetime_2578 v1
-du_govActionLifetime_2578 :: T_GeneralizeTel_65967 -> Integer
+du_govActionLifetime_2578 :: T_GeneralizeTel_66035 -> Integer
 du_govActionLifetime_2578 v0
   = coe
       MAlonzo.Code.Ledger.PParams.d_govActionLifetime_368
       (coe
-         d_pparams_1898 (coe d_'46'generalizedField'45'Γ_65951 (coe v0)))
+         d_pparams_1898 (coe d_'46'generalizedField'45'Γ_66019 (coe v0)))
 -- Ledger.Gov..generalizedField-Γ
 d_'46'generalizedField'45'Γ_64937 ::
   T_GeneralizeTel_64949 -> T_GovEnv_1878
@@ -1919,66 +1919,66 @@ data T_GeneralizeTel_64949
                             MAlonzo.Code.Ledger.GovernanceActions.T_Vote_714
                             [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14] Integer
 -- Ledger.Gov..generalizedField-Γ
-d_'46'generalizedField'45'Γ_65951 ::
-  T_GeneralizeTel_65967 -> T_GovEnv_1878
-d_'46'generalizedField'45'Γ_65951 v0
+d_'46'generalizedField'45'Γ_66019 ::
+  T_GeneralizeTel_66035 -> T_GovEnv_1878
+d_'46'generalizedField'45'Γ_66019 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v1
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v1
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-addr
-d_'46'generalizedField'45'addr_65953 ::
-  T_GeneralizeTel_65967 -> MAlonzo.Code.Ledger.Address.T_RwdAddr_76
-d_'46'generalizedField'45'addr_65953 v0
+d_'46'generalizedField'45'addr_66021 ::
+  T_GeneralizeTel_66035 -> MAlonzo.Code.Ledger.Address.T_RwdAddr_76
+d_'46'generalizedField'45'addr_66021 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v2
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v2
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-a
-d_'46'generalizedField'45'a_65955 ::
-  T_GeneralizeTel_65967 ->
+d_'46'generalizedField'45'a_66023 ::
+  T_GeneralizeTel_66035 ->
   MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692
-d_'46'generalizedField'45'a_65955 v0
+d_'46'generalizedField'45'a_66023 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v3
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v3
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-p
-d_'46'generalizedField'45'p_65957 ::
-  T_GeneralizeTel_65967 -> Maybe AgdaAny
-d_'46'generalizedField'45'p_65957 v0
+d_'46'generalizedField'45'p_66025 ::
+  T_GeneralizeTel_66035 -> Maybe AgdaAny
+d_'46'generalizedField'45'p_66025 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v4
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v4
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-d
-d_'46'generalizedField'45'd_65959 ::
-  T_GeneralizeTel_65967 -> Integer
-d_'46'generalizedField'45'd_65959 v0
+d_'46'generalizedField'45'd_66027 ::
+  T_GeneralizeTel_66035 -> Integer
+d_'46'generalizedField'45'd_66027 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v5
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v5
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-prev
-d_'46'generalizedField'45'prev_65961 ::
-  T_GeneralizeTel_65967 -> AgdaAny
-d_'46'generalizedField'45'prev_65961 v0
+d_'46'generalizedField'45'prev_66029 ::
+  T_GeneralizeTel_66035 -> AgdaAny
+d_'46'generalizedField'45'prev_66029 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v6
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v6
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-s
-d_'46'generalizedField'45's_65963 ::
-  T_GeneralizeTel_65967 -> [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14]
-d_'46'generalizedField'45's_65963 v0
+d_'46'generalizedField'45's_66031 ::
+  T_GeneralizeTel_66035 -> [MAlonzo.Code.Agda.Builtin.Sigma.T_Σ_14]
+d_'46'generalizedField'45's_66031 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v7
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v7
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov..generalizedField-k
-d_'46'generalizedField'45'k_65965 ::
-  T_GeneralizeTel_65967 -> Integer
-d_'46'generalizedField'45'k_65965 v0
+d_'46'generalizedField'45'k_66033 ::
+  T_GeneralizeTel_66035 -> Integer
+d_'46'generalizedField'45'k_66033 v0
   = case coe v0 of
-      C_mkGeneralizeTel_65969 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v8
+      C_mkGeneralizeTel_66037 v1 v2 v3 v4 v5 v6 v7 v8 -> coe v8
       _ -> MAlonzo.RTE.mazUnreachableError
 -- Ledger.Gov.GeneralizeTel
-d_GeneralizeTel_65967 a0 = ()
-data T_GeneralizeTel_65967
-  = C_mkGeneralizeTel_65969 T_GovEnv_1878
+d_GeneralizeTel_66035 a0 = ()
+data T_GeneralizeTel_66035
+  = C_mkGeneralizeTel_66037 T_GovEnv_1878
                             MAlonzo.Code.Ledger.Address.T_RwdAddr_76
                             MAlonzo.Code.Ledger.GovernanceActions.T_GovAction_692
                             (Maybe AgdaAny) Integer AgdaAny
